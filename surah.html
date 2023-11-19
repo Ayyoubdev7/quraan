@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع القرآن الكريم | قرائة السورة</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="./images/logo.png">
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="main-loader">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-dark navbar-expand-lg bg-body-tertiary pt-3 user-select-none">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">المُصحف الإلكتروني</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">
+                                    <i class="fas fa-home"></i> الرئيسية
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#chapters">
+                                    <i class="fas fa-book-quran"></i>
+                                    جميع السور
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#rosary">
+                                    <i class="fas fa-mosque"></i>
+                                    السبحة الإلكترونية
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#progress">
+                                    <i class="fas fa-list-check"></i>
+                                    تابع تقدُمك
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="prayers-times.html">
+                                    <i class="fas fa-clock"></i>
+                                    مواقيت الصلاة
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="hadeeths.htm">
+                                    <i class="fas fa-clock"></i>
+                                    الأحاديث
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    <i class="fab fa-telegram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="audio user-select-none">
+                <div style="width: 50px; height: 50px;"></div>
+                <div class="audio-player">
+                    <div class="timeline">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="controls">
+                        <div class="play-container">
+                            <div class="toggle-play play">
+                            </div>
+                        </div>
+                        <div class="time">
+                            <div class="current">0:00</div>
+                            <div class="divider">/</div>
+                            <div class="length"></div>
+                        </div>
+                        <div class="surahNameAudio fs-2">Surah Name</div>
+                        <div class="volume-container">
+                            <div class="volume-button">
+                                <div class="volume fs-6 fa-solid fa-volume-high"></div> 
+                            </div>
+
+                            <div class="volume-slider">
+                                <div class="volume-percentage"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white p-3 rounded mt-5 text-black">
+                <div class="text-center" style="font-size: 30px;">
+                    ּ﷽
+                </div>
+                <p class="surah-content mt-3 mb-0" style="line-height: 2;">
+                </p>
+                <div class="text-center fw-semibold" style="font-size: 30px;">
+                    ڝــدڦــﷲ ا̍ڸــﻋــڟــېْۧــمۘ
+                </div>
+            </div>
+            <div class="mt-3 pb-3">
+                <div class="d-flex" style="justify-content: space-between;">
+                    <div>
+                        <a href="" id='prev_surah' class="user-select-none">
+                            <i class="fas fa-arrow-right"></i> السورة السابقة
+                        </a>
+                    </div>
+                    <div>
+                        <a href="" id='next_surah' class="user-select-none">
+                            السورة التالية <i class="fas fa-arrow-left"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <footer class="text-center bg-dark p-3 text-white">
+        <div> Quraan Application &copy;<script>document.write(new Date().getFullYear())</script></div>
+        <div class="mt-1">
+            <i class="fab ms-2 fa-facebook"></i>
+            <i class="fab ms-2 fa-whatsapp"></i>
+            <i class="fab fa-telegram"></i>
+        </div>
+    </footer>
+
+    <button class="scrollToTopBtn"><i class="fa-solid fa-arrow-up"></i></button>
+    <script src="js/ScrollToUp.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/surah.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

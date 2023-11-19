@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع القرآن الكريم </title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="./images/logo.png">
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="main-loader">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-dark navbar-expand-lg bg-body-tertiary pt-3">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">المُصحف الإلكتروني</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">
+                                    <i class="fas fa-home"></i> الرئيسية
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#chapters">
+                                    <i class="fas fa-book-quran"></i>
+                                    جميع السور
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#rosary">
+                                    <i class="fas fa-mosque"></i>
+                                    السبحة الإلكترونية
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#progress">
+                                    <i class="fas fa-list-check"></i>
+                                    تابع تقدُمك
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="prayers-times.html">
+                                    <i class="fas fa-clock"></i>
+                                    مواقيت الصلاة
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="hadeeths.htm">
+                                    <i class="fas fa-clock"></i>
+                                    الأحاديث
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    <i class="fab fa-telegram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="content">
+                <div class="row">
+                    <div class="wow fadeInRight col-md-7 col-12 text-center text-md-end">
+                        <h1>موقع القرآن الكريم</h1>
+                        <p class="my-5">
+                        <div style="width: 80%;">
+                            <span class="random_aya_h2" style="font-size: 28px;"></span>
+                            <div class="text-start">
+                                <a href="" id="random-aya-link">
+                                    <span class="surah_name" id="surah-name"></span>
+                                    <span> - </span>
+                                    <span id="aya-number"></span>
+                                </a>
+                            </div>
+                        </div>
+                        </p>
+                        <div class="buttons mt-4">
+                            <a href="#chapters">
+                                <button class="btn ms-2 btn-light btn-lg">
+                                    <i class="fas fa-book-quran"></i> عرض جميع السور
+                                </button>
+                            </a>
+                            <a href="#rosary">
+                                <button class="btn btn-outline-light btn-lg">
+                                    <i class="fas fa-mosque"></i> السبحة الإلكترونية
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="wow fadeInLeft col-md-5 d-none d-md-block text-start" style="margin-top: -120px;">
+                        <img src="./images/header.png" alt="Header Image" width="120%">
+                    </div>
+                </div>
+            </div>
+
+            <div class="max-bottom wow slideInDown">
+                <div class="bottom-spinner cursor-pointer" onclick="window.scrollTo(0, window.innerHeight)">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="chapters">
+        <div class="container">
+            <h1 class="theme-heading">
+                <span>جميع السور</span>
+                <span></span>
+                <span></span>
+            </h1>
+            <div class="row" id="surahs-container"></div>
+        </div>
+    </section>
+    <section id="progress">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="bg-white p-3 rounded-1">
+                        <div class="d-flex" style="justify-content: space-between;">
+                            <h1 class="theme-heading my-0 wow fadeInRight">
+                                <span>مُتتبع القراءة</span>
+                                <span></span>
+                                <span></span>
+                            </h1>
+                            <a href="" id="rocketlink">
+                                <i class="fas fa-rocket text-primary" style="font-size: 24px;"></i>
+                            </a>
+                        </div>
+                        <h2 class="text-center wow fadeIn">
+                            <a href="" id="surahlink">
+                                <span><img src="./images/brace.png" style="width: 90px; transform: scaleX(-1);"></span>
+                                <span class="surah_name" id="surahname"></span>
+                                <span><img src="./images/brace.png" style="width: 90px;"></span>
+                            </a>
+
+                            <span class="alert alert-info mt-3" style="font-size: 16px; display: none;"
+                                id="readmessage">قم بالقراءة لحفظ
+                                تتبُعك</span>
+                        </h2>
+                        <div class="text-start wow fadeInLeft" id="progressinfo">
+                            <span>عدد الآيات: </span>
+                            <span id="ayacount"></span>
+                            <span>آية</span>
+                            <span> - </span>
+                            <span>نوع السورة: </span>
+                            <span id="surahtype"></span>
+                            <span> - </span>
+                            <span>الترتيب في المُصحف: </span>
+                            <span id="surahorder"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="rosary" class="mt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="bg-white p-3 rounded-1">
+                        <h1 class="theme-heading mt-0 wow fadeInRight">
+                            <span>السبحة الإلكترونية</span>
+                            <span></span>
+                            <span></span>
+                        </h1>
+                        <div class="row">
+                            <div class="col-md-7 position-relative col-12 mb-3 mb-md-0 wow fadeIn">
+                                <div class="d-flex align-items-center mt-5" style="flex-direction: column;">
+                                    <h4 class="mt-5">
+                                        <span>✨❤️ [</span>
+                                        <span id="33_click_changer">الله أكبر</span>
+                                        <span>]</span>
+                                    </h4>
+                                    <div class="my-3">
+                                        <div id="rosary-btn"
+                                            class="shadow p-5 rounded-circle d-flex cursor-pointer justify-content-center align-items-center"
+                                            style="width: 150px; height: 150px; font-size: 34px; transition: .1s; user-select: none;">
+                                            0
+                                        </div>
+                                        <div class="position-absolute me-3" style="bottom: 0px;right: 0px;">
+                                            <span>عدد العدات الكاملة: </span>
+                                            <span class="fw-bold" id="rosary_full_counter"></span> /
+                                            <a class="text-primary" id="rosary_reset" style="cursor: pointer;">
+                                                تهيئة العداد
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-12 text-start wow fadeInLeft">
+                                <img src="./images/rosary.png" alt="Rosary Image" width="70%">
+                                <div class="text-start">
+                                    <small>
+                                        <i class="fas fa-lightbulb text-warning"></i> يتم حفظ تقدُمك
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="text-center bg-dark p-3 mt-3 text-white">
+        <div> Quraan Application &copy;<script>document.write(new Date().getFullYear())</script></div>
+        <div class="mt-1">
+            <i class="fab ms-2 fa-facebook"></i>
+            <i class="fab ms-2 fa-whatsapp"></i>
+            <i class="fab fa-telegram"></i>
+        </div>
+    </footer>
+
+    <button class="scrollToTopBtn"><i class="fa-solid fa-arrow-up"></i></button>
+    <script src="./js/stickyNav.js"></script>
+    <script src="js/ScrollToUp.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/rosary.js"></script>
+    <script src="./js/randomayah.js"></script>
+    <script src="./js/readingTracker.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
